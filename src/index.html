@@ -1,12 +1,54 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fa-IR" dir="rtl">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="./output.css">
+   
+    <script src="style.js" defer></script>
 </head>
-<body>
+<body >
+    <div class="flex justify-between items-center px-4 py-3 bg-white sticky top-0 z-50 shadow-sm container">
+        <!-- mahsolat -->
+        <div class="w-1/6">
+            <button class="md:hidden">
+                <img class="w-6" src="./assets/svg/line-3.svg" alt="منو">
+            </button>
+            
+            <div class="hidden md:flex items-center gap-6">
+                <span class="font-medium text-gray-800 whitespace-nowrap">خرید لباس</span>
+                <ul class="flex gap-4 text-sm text-gray-600 whitespace-nowrap">
+                    <li class="hover:text-gray-900">محصولات</li>
+                    <li class="hover:text-gray-900">پوشاک</li>
+                    <li class="hover:text-gray-900">جواهرات</li>
+                    <li class="hover:text-gray-900">لوازم الکترونیکی</li>
+                </ul>
+            </div>
+        </div>
     
+        <!-- center-logo -->
+        <div class="flex-1 flex justify-center md:pl-6">
+            <img class="h-8" src="./assets/svg/header.svg" alt="لوگو">
+        </div>
+
+    <!-- logos-left -->
+    <div class="w-1/3 md:w-1/6 flex justify-end items-center gap-5 md:gap-4">
+        <button class="w-8 md:w-5">
+            <img class="w-full" src="./assets/svg/search-svgrepo-com.svg" alt="جستجو">
+        </button>
+        
+        
+        <button class="w-8 md:w-5 relative">
+            <img class="w-full" src="./assets/svg/buy-svgrepo-com.svg" alt="سبد خرید">
+            <span class="absolute -top-2 -right-2 bg-red-500 text-white text-xs rounded-full w-5 h-5 md:w-4 md:h-4 flex items-center justify-center">0</span>
+        </button>
+        
+        <button class="w-8 md:w-5">
+            <img class="w-full" src="./assets/svg/in-log-outlined-svgrepo-com.svg" alt="حساب کاربری">
+        </button>
+    </div>
+    </div>
 </body>
 </html>
