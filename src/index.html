@@ -9,7 +9,7 @@
     <script src="style.js" defer></script>
 </head>
 <body >
-    <div class="flex justify-between items-center px-4 py-3 bg-white sticky top-0 z-50 shadow-sm container">
+    <div class="flex justify-between items-center px-4 py-[2rem] bg-white sticky top-0 z-50 shadow-sm container-lg">
         <!-- mahsolat -->
         <div class="w-1/6">
             <button class="md:hidden">
@@ -49,8 +49,45 @@
         </button>
     </div>
     </div>
+    <div class="container-lg hidden lg:block">
+        <img src="./assets/images/header.jpg" alt="هدر دسکتاپ" class="w-full h-auto">
+    </div>
+
+    <div class="hidden lg:flex justify-center items-center gap-8 container py-12">
+        <!-- اسلاید اول -->
+        <div class="border border-gray-200 rounded-lg p-6 text-center w-full max-w-xs hover:shadow-lg hover:border-gray-500 transition-all duration-300 group">
+            <div class="flex justify-center">
+                <img src="./assets/svg/new-document-svgrepo-com.svg" alt="تازه ترین پوشاک" class="w-16 h-16 group-hover:scale-110 transition-transform duration-300">
+            </div>
+            <span class="block py-4 text-lg font-bold">تازه ترین پوشاک</span>
+            <div class="border-t border-red-500 w-16 mx-auto my-4 group-hover:w-24 transition-all duration-300"></div>
+            <p class="text-gray-600">تمامی گل‌های ارائه شده به صورت روزانه تهیه می‌شوند و مطابق با تصاویر درج شده در سایت خواهند بود.</p>
+        </div>
     
-    <div class="container-lg flex flex-col p-4 gap-4 md:grid grid-cols-4">
+        <!-- اسلاید دوم -->
+        <div class="border border-gray-200 rounded-lg p-6 text-center w-full max-w-xs hover:shadow-lg hover:border-gray-500 transition-all duration-300 group">
+            <div class="flex justify-center">
+                <img src="./assets/svg/car-round-650-svgrepo-com.svg" alt="تحویل رایگان" class="w-16 h-16 group-hover:scale-110 transition-transform duration-300">
+            </div>
+            <span class="block py-4 text-lg font-bold">تحویل رایگان</span>
+            <div class="border-t border-red-500 w-16 mx-auto my-4 group-hover:w-24 transition-all duration-300"></div>
+            <p class="text-gray-600">در صورتی که محل دریافت سفارش شما تهران است، این مجموعه هزینه‌ای جهت ارسال محصول از شما دریافت نمی‌کند.</p>
+        </div>
+    
+        <!-- اسلاید سوم -->
+        <div class="border border-gray-200 rounded-lg p-6 text-center w-full max-w-xs hover:shadow-lg hover:border-gray-500 transition-all duration-300 group">
+            <div class="flex justify-center">
+                <img src="./assets/svg/phone-signal-svgrepo-com.svg" alt="پشتیبانی" class="w-16 h-16 group-hover:scale-110 transition-transform duration-300">
+            </div>
+            <span class="block py-4 text-lg font-bold">پشتیبانی همه روزه</span>
+            <div class="border-t border-red-500 w-16 mx-auto my-4 group-hover:w-24 transition-all duration-300"></div>
+            <p class="text-blue-700">02186046127</p>
+            <p class="text-blue-700">09034644222</p>
+            <p class="text-blue-700">02188713245</p>
+        </div>
+    </div>
+
+    <div class="container-md flex flex-col p-4 gap-4 md:grid grid-cols-4">
         <div class="relative group">
             <img class="w-full h-auto rounded-lg shadow aspect-square object-contain transition-all duration-300" 
                  src="./assets/images/1.jpg" alt="لباس مردانه">
