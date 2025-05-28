@@ -12,17 +12,133 @@
     <div class="flex justify-between items-center px-4 py-[2rem] bg-white sticky top-0 z-50 shadow-sm container-lg">
         <!-- mahsolat -->
         <div class="w-1/6">
-            <button class="md:hidden">
-                <img class="w-6" src="./assets/svg/line-3.svg" alt="منو">
-            </button>
+          <div class="md:hidden ">
+          <img onclick="togglesidebar()" class="w-6 rotate-180 text-4xl" src="./assets/svg/line-3.svg" alt="منو">
+            </div>
+
+            <div id="sidebar" class="fixed h-[100vh] top-0 right-0 z-50 w-full translate-x-full backdrop-brightness-50 shadow-xl transition duration-[1s]">
+             <img class="fixed top-5 left-5 text-4xl w-12 text-white" onclick="togglesidebar()" src="./assets/svg/close-bold-svgrepo-com (1).svg" alt="">
+             <div class="w-[80%] color dark:bg-gray-800 h-screen p-6 flex flex-col gap-6 shadow-lg rounded-r-xl overflow-y-auto">
+              <h2 class="text-2xl font-bold text-gray-800 dark:text-white border-b pb-3 border-gray-200 dark:border-gray-700">محصولات</h2>
+              
+              <ul class="flex flex-col gap-2">
+                <li class="group">
+                  <a href="#" class="block px-4 py-2 text-gray-700 dark:text-gray-300 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors duration-200 group-hover:translate-x-1">
+                    مردانه
+                  </a>
+                </li>
+                <li class="group">
+                  <a href="#" class="block px-4 py-2 text-gray-700 dark:text-gray-300 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors duration-200 group-hover:translate-x-1">
+                    زنانه
+                  </a>
+                </li>
+                <li class="group">
+                  <a href="#" class="block px-4 py-2 text-gray-700 dark:text-gray-300 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors duration-200 group-hover:translate-x-1">
+                    جواهرات
+                  </a>
+                </li>
+                <li class="group">
+                  <a href="#" class="block px-4 py-2 text-gray-700 dark:text-gray-300 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors duration-200 group-hover:translate-x-1">
+                    لوازم جانبی
+                  </a>
+                </li>
+              </ul>
+            </div>
+            </div>
             
             <div class="hidden md:flex items-center gap-6">
                 <span class="font-medium text-gray-800 whitespace-nowrap">خرید لباس</span>
                 <ul class="flex gap-4 text-sm text-gray-600 whitespace-nowrap">
-                    <li class="hover:text-gray-900">محصولات</li>
-                    <li class="hover:text-gray-900">پوشاک</li>
-                    <li class="hover:text-gray-900">جواهرات</li>
-                    <li class="hover:text-gray-900">لوازم الکترونیکی</li>
+                    <li class="group relative px-4 py-2 text-gray-600 hover:text-gray-900 transition-colors duration-200 cursor-pointer">
+                       محصولات
+                        <div class="absolute -left-[200%] -translate-x-1/2 top-full w-[600px] bg-white shadow-xl rounded-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible translate-y-2 group-hover:translate-y-0 transition-all duration-300 ease-out z-50  border border-gray-100 mt-1">
+                          <div class="p-5 flex flex-col justify-between items-start gap-6">
+                              <h1 class="font-bold text-2xl">محصولات</h1>
+                            <ul class="space-y-3 text-gray-700 min-w-[200px]">
+                              <li class="font-medium hover:text-primary-500 transition-colors duration-150">
+                                مردانه
+                              </li>
+                              <li class="font-medium hover:text-primary-500 transition-colors duration-150">
+                                زنانه
+                              </li>
+                              <li class="font-medium hover:text-primary-500 transition-colors duration-150">
+                               جواهرات
+                              </li>
+                              <li class="font-medium hover:text-primary-500 transition-colors duration-150">
+                               لوازم جانبی
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </li>
+                    <li class="group relative px-4 py-2 text-gray-600 hover:text-gray-900 transition-colors duration-200 cursor-pointer">
+                        پوشاک
+                        <div class="absolute -left-[200%] -translate-x-1/2 top-full w-[600px] bg-white shadow-xl rounded-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible translate-y-2 group-hover:translate-y-0 transition-all duration-300 ease-out z-50  border border-gray-100 mt-1">
+                          <div class="p-5 flex justify-between items-start gap-6">
+                              <div class="flex flex-col gap-7">
+                                  <h1 class="text-2xl font-bold">پوشاک</h1>
+                            <ul class="space-y-3 text-gray-700 min-w-[200px]">
+                              <li class="font-medium hover:text-primary-500 transition-colors duration-150">
+                                مردانه
+                              </li>
+                              <li class="font-medium hover:text-primary-500 transition-colors duration-150">
+                                زنانه
+                              </li>
+                            </ul>
+                        </div>
+                            <img 
+                              class="w-48 h-[300px] object-cover rounded-lg" 
+                              src="./assets/images/headerselect.jpg" 
+                              alt="پوشاک"
+                              loading="lazy"
+                            >
+                          </div>
+                        </div>
+                      </li>
+                      <li class="group relative px-4 py-2 text-gray-600 hover:text-gray-900 transition-colors duration-200 cursor-pointer">
+                جواهرات
+                        <div class="absolute -left-[200%] -translate-x-1/2 top-full w-[600px] bg-white shadow-xl rounded-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible translate-y-2 group-hover:translate-y-0 transition-all duration-300 ease-out z-50  border border-gray-100 mt-1">
+                          <div class="p-5 flex justify-between items-start gap-6">
+                            <div class="flex flex-col gap-7">
+                                <h1 class="text-2xl font-bold">جواهرات</h1>
+                            <ul class="space-y-3 text-gray-700 min-w-[200px]">
+                              <li class="font-medium hover:text-primary-500 transition-colors duration-150">
+                               جواهرات مدرن
+                              </li>
+                              
+                            </ul>
+                            </div>
+                            <img 
+                              class="w-48 h-[300px] object-cover rounded-lg" 
+                              src="./assets/images/headerselect1.jpg" 
+                              alt="پوشاک"
+                              loading="lazy"
+                            >
+                          </div>
+                        </div>
+                      </li>
+                      <li class="group relative px-4 py-2 text-gray-600 hover:text-gray-900 transition-colors duration-200 cursor-pointer">
+                        لوازم الکترونیکی
+                        <div class="absolute -left-[200%] -translate-x-1/2 top-full w-[600px] bg-white shadow-xl rounded-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible translate-y-2 group-hover:translate-y-0 transition-all duration-300 ease-out z-50  border border-gray-100 mt-1">
+                          <div class="p-5 flex justify-between items-start gap-6">
+                            <div class="flex flex-col gap-7">
+                                <h1 class="text-2xl font-bold">لوازم جانبی</h1>
+                            <ul class="space-y-3 text-gray-700 min-w-[200px]">
+                              <li class="font-medium hover:text-primary-500 transition-colors duration-150">
+                                لوازم الکترونیکی
+                              </li>
+                            
+                            </ul>
+                            </div>
+                            <img 
+                              class="w-48 h-[300px] object-cover rounded-lg" 
+                              src="./assets/images/headerselect2.jpg" 
+                              alt="پوشاک"
+                              loading="lazy"
+                            >
+                          </div>
+                        </div>
+                      </li>
                 </ul>
             </div>
         </div>
@@ -49,6 +165,7 @@
         </button>
     </div>
     </div>
+    
     <div class="container-lg hidden lg:block">
         <img src="./assets/images/header.jpg" alt="هدر دسکتاپ" class="w-full h-auto">
     </div>
@@ -190,7 +307,7 @@
 </div>
       </div>
 
-      <div class="container-lgg mt24 bg-blue-600 mb-20">
+      <div class="container-lg mt24 bg-blue-600 mb-20">
           <a href="#">
           <h1 class="font-bold text-center py-16 text-white text-2xl">محصولات فروشی آنلاین Vip برای خرید پوشاک وجواهرات و لوارم جانبی و سفارش آنلاین</h1>
         </a>

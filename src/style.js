@@ -1,3 +1,15 @@
+
+  const mobileMenu=document.getElementById("sidebar");
+function togglesidebar(){
+  mobileMenu.classList.toggle("translate-x-full")
+  sidebar.classList.toggle('translate-x-0');
+}
+
+
+
+
+
+
 fetch("https://fakestoreapi.com/products/category/men's clothing")
 .then(res => res.json())
 .then(json => renderbodypageman(json))
