@@ -13,7 +13,24 @@ function togglesidebar(){
 fetch("https://fakestoreapi.com/products/category/men's clothing")
 .then(res => res.json())
 .then(json => renderbodypageman(json))
-.catch(err =>alert(err))
+.catch(err =>{Toastify({
+  text: "اطلاعات شما دارای خطا می باشد!",
+  duration: 3000,
+  destination: "https://github.com/apvarun/toastify-js",
+  newWindow: true,
+  close: true,
+  gravity: "top", // `top` or `bottom`
+  position: "center", // `left`, `center` or `right`
+  stopOnFocus: true, // Prevents dismissing of toast on hover
+  style: {
+    background: "linear-gradient(to right, #ff5555, #ff0000)",
+  },
+  onClick: function(){
+    location.reload()
+  } // Callback after click
+}).showToast();
+});
+
 function renderbodypageman(items){
     const menClothes=document.getElementById("men-clothes");
 const template=items.map(item=>{
@@ -34,6 +51,20 @@ return `
 }).join("");
 
 menClothes.innerHTML=template;
+Toastify({
+    text: "به فروشگاه خود خوش آمدید!",
+    duration: 3000,
+    destination: "https://github.com/apvarun/toastify-js",
+    newWindow: true,
+    close: false,
+    gravity: "top", // `top` or `bottom`
+    position: "center", // `left`, `center` or `right`
+    stopOnFocus: true, // Prevents dismissing of toast on hover
+    style: {
+      background: "linear-gradient(to right, #00b09b, #96c93d)",
+    },
+    onClick: function(){} // Callback after click
+  }).showToast();
 }
 
 
@@ -41,7 +72,22 @@ menClothes.innerHTML=template;
 fetch("https://fakestoreapi.com/products/category/women's clothing")
 .then(res => res.json())
 .then(json => renderbodypagewoman(json))
-.catch(err =>alert(err))
+.catch(err =>{Toastify({
+  text: "اطلاعات شما دارای خطا می باشد!",
+  duration: 3000,
+  destination: "https://github.com/apvarun/toastify-js",
+  newWindow: true,
+  close: true,
+  gravity: "top", // `top` or `bottom`
+  position: "center", // `left`, `center` or `right`
+  stopOnFocus: true, // Prevents dismissing of toast on hover
+  style: {
+    background: "linear-gradient(to right, #ff5555, #ff0000)",
+  },
+  onClick: function(){
+    location.reload()
+  } // Callback after click
+}).showToast();});
 
 
 function renderbodypagewoman(items){
@@ -64,4 +110,5 @@ return `
 }).join("");
 
 womenClothes.innerHTML=template;
+
 }
