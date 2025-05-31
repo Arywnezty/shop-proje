@@ -31,6 +31,17 @@ fetch("https://fakestoreapi.com/products/category/men's clothing")
 }).showToast();
 });
 
+
+function handleMenclick(evt){
+  evt.preventDefault();
+
+const href=evt.target.getAttribute("href")
+
+ history.pushState({},"",href)
+}
+
+
+
 function renderbodypageman(items){
     const menClothes=document.getElementById("men-clothes");
 const template=items.map(item=>{

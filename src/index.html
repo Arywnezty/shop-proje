@@ -14,7 +14,9 @@
     <div class="flex justify-between items-center px-4 py-[2rem] bg-white sticky top-0 z-50 shadow-sm container-lg">
         <!-- mahsolat -->
         <div class="w-1/6">
+
           <div class="md:hidden ">
+            <!-- mobile header-->
           <img onclick="togglesidebar()" class="w-6 rotate-180 text-4xl" src="./assets/svg/line-3.svg" alt="منو">
             </div>
 
@@ -47,19 +49,24 @@
               </ul>
             </div>
             </div>
-            
+
+
+            <!-- desktop header -->
             <div class="hidden md:flex items-center gap-6">
                 <span class="font-medium text-gray-800 whitespace-nowrap">خرید لباس</span>
                 <ul class="flex gap-4 text-sm text-gray-600 whitespace-nowrap">
-                    <li class="group relative px-4 py-2 text-gray-600 hover:text-gray-900 transition-colors duration-200 cursor-pointer">
-                       محصولات
-                        <div class="absolute -left-[-180%] top-full w-[200px] bg-white shadow-xl rounded-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible translate-y-2 group-hover:translate-y-0 transition-all duration-300 ease-out z-50  border border-gray-100 mt-1">
+                    <li class="group relative px-4 py-2 text-gray-600 hover:text-gray-900 transition-colors duration-200 cursor-pointer">                    
+                       محصولات                     
+                        <div class="absolute -left-[180%] top-full w-[200px] bg-white shadow-xl rounded-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible translate-y-2 group-hover:translate-y-0 transition-all duration-300 ease-out z-50  border border-gray-100 mt-1">
                           <div class="p-5 flex flex-col justify-between items-start gap-6">
                               <h1 class="font-bold text-2xl">محصولات</h1>
                             <ul class="space-y-3 text-gray-700 min-w-[200px]">
                               <li class="font-medium hover:text-primary-500 transition-colors duration-150">
+                                <a onclick="handleMenclick(event)" href="/men">
                                 مردانه
+                              </a>
                               </li>
+                           
                               <li class="font-medium hover:text-primary-500 transition-colors duration-150">
                                 زنانه
                               </li>
