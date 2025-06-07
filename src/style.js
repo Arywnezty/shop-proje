@@ -707,6 +707,285 @@ async function renderMainpage(){
         <h1 class="font-bold text-center py-16 text-white text-2xl">محصولات فروشی آنلاین Vip برای خرید پوشاک وجواهرات و لوارم جانبی و سفارش آنلاین</h1>
       </a>
     </div>
+    <!-- text card -->
+    <div class="container px-4 py-12">
+    <div class="text-center mb-[20%] text-5xl font-bold text-red-500 md:mb-[4%]">
+    <h1>آنلاین شاپ!</h1>
+       </div>
+  <!-- پوشاک مردانه -->
+  <div class="mb-16">
+    <h2 class="text-3xl font-bold mb-8 text-dark border-b-4 border-gray-600 pb-2 inline-block">پوشاک های مردانه</h2>
+    <p class="text-lg mb-6 text-gray-700">ظرفیت و قدرت در هر دوخت</p>
+    <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <!-- کت و شلوار رسمی -->
+        <div class="bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow overflow-hidden">
+            <div class="h-48 bg-gray-200 overflow-hidden">
+                <img src="./assets/images/1.jpeg" 
+                     alt="کت و شلوار مردانه رسمی"
+                     class="w-full h-full object-cover">
+            </div>
+            <div class="p-6">
+                <h3 class="text-xl font-semibold mb-3 text-gray-600">کت و شلوارهای رسمی</h3>
+                <p class="text-gray-600 mb-4">مناسب برای مهمانی‌ها و جلسات کاری با پارچه‌های درجه یک</p>
+                <button class="bg-gray-500 text-white py-2 px-4 rounded hover:bg-blue-700 transition-colors w-full">
+                    مشاهده محصولات
+                </button>
+            </div>
+        </div>
+
+        <!-- لباس اسپرت -->
+        <div class="bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow overflow-hidden">
+            <div class="h-48 bg-gray-200 overflow-hidden">
+                <img src="./assets/images/9.jpg" 
+                     alt="لباس اسپرت مردانه"
+                     class="w-full h-full object-cover">
+            </div>
+            <div class="p-6">
+                <h3 class="text-xl font-semibold mb-3 text-gray-600">لباس‌های اسپرت</h3>
+                <p class="text-gray-600 mb-4">تیشرت‌های نخی با طرح‌های متنوع تا هودی‌های راحت</p>
+                <button class="bg-gray-500  text-white py-2 px-4 rounded hover:bg-blue-700 transition-colors w-full">
+                    مشاهده محصولات
+                </button>
+            </div>
+        </div>
+
+        <!-- لباس فصلی -->
+        <div class="bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow overflow-hidden">
+            <div class="h-48 bg-gray-200 overflow-hidden">
+                <img src="./assets/images/10_.jpg" 
+                     alt="پالتوی مردانه زمستانی"
+                     class="w-full h-full object-cover">
+            </div>
+            <div class="p-6">
+                <h3 class="text-xl font-semibold mb-3 text-gray-600">لباس‌های فصلی</h3>
+                <p class="text-gray-600 mb-4">کت‌های زمستانی گرم و پالتوهای شیک</p>
+                <button class="bg-gray-500 bg-primary text-white py-2 px-4 rounded hover:bg-blue-700 transition-colors w-full">
+                    مشاهده محصولات
+                </button>
+            </div>
+        </div>
+
+        <!--  اکسسوری مردانه -->
+        <div class="bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow overflow-hidden">
+            <div class="h-48 bg-gray-200 overflow-hidden">
+                <img src="./assets/images/11.jpg" 
+                     alt="اکسسوری مردانه"
+                     class="w-full h-full object-cover">
+            </div>
+            <div class="p-6">
+                <h3 class="text-xl font-semibold mb-3 text-gray-600">اکسسوری‌های مردانه</h3>
+                <p class="text-gray-600 mb-4">کراوات، دستمال جیبی، کمربند و کیف‌های چرمی لوکس</p>
+                <button class="bg-gray-500  text-white py-2 px-4 rounded hover:bg-blue-700 transition-colors w-full">
+                    مشاهده محصولات
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+  <!-- پوشاک زنانه -->
+  <div class="mb-16">
+      <h2 class="text-3xl font-bold mb-8 text-dark border-b-4 border-blue-400 pb-2 inline-block">پوشاک های زنانه</h2>
+      <p class="text-lg mb-6 text-gray-700">زیبایی و اصالت در هر استایل</p>
+      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+         <!-- لباس های مجلسی -->   
+          <div class="bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow overflow-hidden">
+            <div class="h-48 bg-gray-200 overflow-hidden">
+              <img src="./assets/images/13.jpg" 
+                   alt="کت و شلوار مردانه رسمی"
+                   class="w-full h-full object-cover">
+              </div> 
+              <div class="p-6">
+              <h3 class="text-xl font-semibold mb-3 text-blue-400">لباس‌های مجلسی</h3>
+              <p class="text-gray-600 mb-4">طراحی‌های خاص برای مهمانی‌های خاص</p>
+              <button class="bg-gray-500 text-white py-2 px-4 rounded hover:bg-blue-700 transition-colors w-full">
+                مشاهده محصولات
+            </button>
+          </div>
+          </div>
+           <!-- لباس های روزمره -->
+          <div class="bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow overflow-hidden">
+            <div class="h-48 bg-gray-200 overflow-hidden">
+              <img src="./assets/images/14.jpg" 
+                   alt="کت و شلوار مردانه رسمی"
+                   class="w-full h-full object-cover">
+              </div> 
+              <div class="p-6">
+              <h3 class="text-xl font-semibold mb-3 text-blue-400">لباس‌های روزمره</h3>
+              <p class="text-gray-600 mb-4">از بلوزهای ساده تا شلوارهای جین طراحی شده</p>
+              <button class="bg-gray-500 text-white py-2 px-4 rounded hover:bg-blue-700 transition-colors w-full">
+                مشاهده محصولات
+            </button>
+          </div>
+          </div>
+           <!-- لباس های سنتی -->
+          <div class="bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow overflow-hidden">
+            <div class="h-48 bg-gray-200 overflow-hidden">
+              <img src="./assets/images/15.jpg" 
+                   alt="کت و شلوار مردانه رسمی"
+                   class="w-full h-full object-cover">
+              </div> 
+              <div class="p-6">
+              <h3 class="text-xl font-semibold mb-3 text-blue-400">لباس‌های سنتی</h3>
+              <p class="text-gray-600 mb-4">با طرح‌های اصیل ایرانی و مدرن که به محصولاتمون اضافه شده</p>
+              <button class="bg-gray-500 text-white py-2 px-4 rounded hover:bg-blue-700 transition-colors w-full">
+                مشاهده محصولات
+            </button>
+          </div>
+          </div>
+           <!-- اکسسوری زنانه -->
+          <div class="bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow overflow-hidden">
+            <div class="h-48 bg-gray-200 overflow-hidden">
+              <img src="./assets/images/12.jpg" 
+                   alt="کت و شلوار مردانه رسمی"
+                   class="w-full h-full object-cover">
+              </div> 
+              <div class="p-6">
+              <h3 class="text-xl font-semibold mb-3 text-blue-400">اکسسوری‌های زنانه</h3>
+              <p class="text-gray-600 mb-4">شال، روسری، کیف و کفش‌های هماهنگ با هر استایل</p>
+              <button class="bg-gray-500 text-white py-2 px-4 rounded hover:bg-blue-700 transition-colors w-full">
+                مشاهده محصولات
+            </button>
+          </div>
+          </div>
+      </div>
+  </div>
+
+  <!-- جواهرات -->
+  <div class="mb-16">
+      <h2 class="text-3xl font-bold mb-8 text-dark border-b-4 border-yellow-500 pb-2 inline-block">جواهرات</h2>
+      <p class="text-lg mb-6 text-gray-700">درخشش منحصر به فرد شما</p>
+      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+         <!-- دستبند و گردنبند -->
+          <div class="bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow overflow-hidden">
+            <div class="h-48 bg-gray-200 overflow-hidden">
+              <img src="./assets/images/16.jpg" 
+                   alt="کت و شلوار مردانه رسمی"
+                   class="w-full h-full object-cover">
+              </div> 
+              <div class="p-6">
+              <h3 class="text-xl font-semibold mb-3 text-yellow-500">دستبند و گردنبند</h3>
+              <p class="text-gray-600 mb-4">از طرح‌ مینیمال تا تکه‌های پرزرق و برق</p>
+              <button class="bg-gray-500 text-white py-2 px-4 rounded hover:bg-blue-700 transition-colors w-full">
+                مشاهده محصولات
+            </button>
+          </div>
+        </div>
+         <!-- انگشتر های طلاو نقره -->
+          <div class="bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow overflow-hidden">
+            <div class="h-48 bg-gray-200 overflow-hidden">
+              <img src="./assets/images/17.jpg" 
+                   alt="کت و شلوار مردانه رسمی"
+                   class="w-full h-full object-cover">
+              </div> 
+              <div class="p-6">
+              <h3 class="text-xl font-semibold mb-3 text-yellow-500">انگشترهای طلا و نقره</h3>
+              <p class="text-gray-600 mb-4">با سنگ‌های قیمتی و نیمه قیمتی</p>
+              <button class="bg-gray-500 text-white py-2 px-4 rounded hover:bg-blue-700 transition-colors w-full">
+                مشاهده محصولات
+            </button>
+          </div>
+        </div>
+         <!-- گوشواره های طراحی شده -->
+          <div class="bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow overflow-hidden">
+            <div class="h-48 bg-gray-200 overflow-hidden">
+              <img src="./assets/images/18.jpg" 
+                   alt="کت و شلوار مردانه رسمی"
+                   class="w-full h-full object-cover">
+              </div> 
+              <div class="p-6">
+              <h3 class="text-xl font-semibold mb-3 text-yellow-500">گوشواره‌های طراحی شده</h3>
+              <p class="text-gray-600 mb-4">برای هر سلیقه و هر فرم صورت</p>
+              <button class="bg-gray-500 text-white py-2 px-4 rounded hover:bg-blue-700 transition-colors w-full">
+                مشاهده محصولات
+            </button>
+          </div>
+        </div>
+         <!-- ساعت های لوکس -->
+          <div class="bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow overflow-hidden">
+            <div class="h-48 bg-gray-200 overflow-hidden">
+              <img src="./assets/images/19.jpg" 
+                   alt="کت و شلوار مردانه رسمی"
+                   class="w-full h-full object-cover">
+              </div> 
+              <div class="p-6">
+              <h3 class="text-xl font-semibold mb-3 text-yellow-500">ساعت‌های لوکس</h3>
+              <p class="text-gray-600 mb-4">از برندهای معتبر بین‌المللی</p>
+              <button class="bg-gray-500 text-white py-2 px-4 rounded hover:bg-blue-700 transition-colors w-full">
+                مشاهده محصولات
+            </button>
+          </div>
+        </div>
+      </div>
+  </div>
+
+  <!--لوازم الکترونیکی -->
+  <div class="mb-16">
+      <h2 class="text-3xl font-bold mb-8 text-black border-b-4 border-green-500 pb-2 inline-block">لوازم الکترونیکی</h2>
+      <p class="text-lg mb-6 text-gray-700">تکنولوژی در خدمت زندگی بهتر</p>
+      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <!-- گوشی های هوشمند -->
+          <div class="bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow overflow-hidden">
+            <div class="h-48 bg-gray-200 overflow-hidden">
+              <img src="./assets/images/20.jpg" 
+                   alt="کت و شلوار مردانه رسمی"
+                   class="w-full h-full object-cover">
+              </div> 
+              <div class="p-6">
+              <h3 class="text-xl font-semibold mb-3 text-green-600">گوشی‌های هوشمند</h3>
+              <p class="text-gray-600 mb-4">آخرین مدل‌ها از برندهای معتبر</p>
+              <button class="bg-gray-500 text-white py-2 px-4 rounded hover:bg-blue-700 transition-colors w-full">
+                مشاهده محصولات
+            </button>
+              </div>
+          </div>
+          <!-- لپتاپ و تپلت -->
+          <div class="bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow overflow-hidden">
+            <div class="h-48 bg-gray-200 overflow-hidden">
+              <img src="./assets/images/21.jpg" 
+                   alt="کت و شلوار مردانه رسمی"
+                   class="w-full h-full object-cover">
+              </div> 
+              <div class="p-6">
+              <h3 class="text-xl font-semibold mb-3 text-green-600">لپ‌تاپ و تبلت</h3>
+              <p class="text-gray-600 mb-4">برای کار و تفریح</p>
+              <button class="bg-gray-500 text-white py-2 px-4 rounded hover:bg-blue-700 transition-colors w-full">
+                مشاهده محصولات
+            </button>
+              </div>
+          </div>
+          <!-- لوازم جانبی -->
+          <div class="bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow overflow-hidden">
+            <div class="h-48 bg-gray-200 overflow-hidden">
+              <img src="./assets/images/22.jpg" 
+                   alt="کت و شلوار مردانه رسمی"
+                   class="w-full h-full object-cover">
+              </div> 
+              <div class="p-6">
+              <h3 class="text-xl font-semibold mb-3 text-green-600">لوازم جانبی</h3>
+              <p class="text-gray-600 mb-4">از پاوربانک تا هدست‌های گیمینگ</p>
+              <button class="bg-gray-500 text-white py-2 px-4 rounded hover:bg-blue-700 transition-colors w-full">
+                مشاهده محصولات
+            </button>
+              </div>
+          </div>
+          <!-- خانه هوشمند -->
+          <div class="bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow overflow-hidden">
+            <div class="h-48 bg-gray-200 overflow-hidden">
+              <img src="./assets/images/23.jpg" 
+                   alt="کت و شلوار مردانه رسمی"
+                   class="w-full h-full object-cover">
+              </div> 
+              <div class="p-6">
+              <h3 class="text-xl font-semibold mb-3 text-green-600">خانه هوشمند</h3>
+              <p class="text-gray-600 mb-4">آسان تر کردن زندگی</p>
+              <button class="bg-gray-500 text-white py-2 px-4 rounded hover:bg-blue-700 transition-colors w-full">
+                مشاهده محصولات
+            </button>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
   `
   root.innerHTML = Template;
 
