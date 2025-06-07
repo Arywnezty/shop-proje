@@ -263,7 +263,7 @@ function renderbodypageelectronic(items){
 
 function rendermenpage(){
 root.innerHTML=`
-<div class="grid grid-cols-1 gap-4 md:grid-cols-4 px-4 rounded-md mt-5">
+<div class="grid grid-cols-1 gap-4 md:grid-cols-4 px-4 rounded-md mt-5 mb-9">
 <div class="w-full h-96 p-1 bg-slate-200 animate-pulse">
    <div class="w-full bg-slate-300 h-64">
    </div>
@@ -317,7 +317,7 @@ fetch("https://fakestoreapi.com/products/category/men's%20clothing")
 function renderMendata(data){
 const template=data.map(item =>{
   return`
-  <div class="w-full max-w-[65rem] flex flex-col gap-4 bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
+  <div class="w-full mb-9 max-w-[65rem] flex flex-col gap-4 bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
   <img 
     src="${item.image}" 
     alt="${item.title}" 
@@ -339,7 +339,7 @@ root.innerHTML=container;
 
 function renderwomenpage(){
   root.innerHTML=`
-<div class="grid grid-cols-1 gap-4 md:grid-cols-4 px-4 rounded-md mt-5">
+<div class="grid grid-cols-1 gap-4 md:grid-cols-4 px-4 rounded-md mt-5 mb-9">
 <div class="w-full h-96 p-1 bg-slate-200 animate-pulse">
    <div class="w-full bg-slate-300 h-64">
    </div>
@@ -392,7 +392,7 @@ fetch("https://fakestoreapi.com/products/category/women's clothing")
   function renderWomendata(data){
     const template=data.map(item =>{
       return`
-      <div class="w-full max-w-[65rem] flex flex-col gap-4 bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
+      <div class="w-full mb-9 max-w-[65rem] flex flex-col gap-4 bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
       <img 
         src="${item.image}" 
         alt="${item.title}" 
@@ -414,7 +414,7 @@ fetch("https://fakestoreapi.com/products/category/women's clothing")
 
 function renderjewelerypage(){
   root.innerHTML=`
-  <div class="grid grid-cols-1 gap-4 md:grid-cols-4 px-4 rounded-md mt-5">
+  <div class="grid grid-cols-1 gap-4 md:grid-cols-4 px-4 rounded-md mt-5 mb-9">
   <div class="w-full h-96 p-1 bg-slate-200 animate-pulse">
      <div class="w-full bg-slate-300 h-64">
      </div>
@@ -467,7 +467,7 @@ function renderjewelerypage(){
   function renderjewelerydata(data){
     const template=data.map(item =>{
       return`
-      <div class="w-full max-w-[65rem] flex flex-col gap-4 bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
+      <div class="w-full mb-9 max-w-[65rem] flex flex-col gap-4 bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
       <img 
         src="${item.image}" 
         alt="${item.title}" 
@@ -489,7 +489,7 @@ function renderjewelerypage(){
 
 function renderelectronicpage(){
   root.innerHTML=`
-  <div class="grid grid-cols-1 gap-4 md:grid-cols-4 px-4 rounded-md mt-5">
+  <div class="grid grid-cols-1 gap-4 md:grid-cols-4 px-4 rounded-md mt-5 mb-9">
   <div class="w-full h-96 p-1 bg-slate-200 animate-pulse">
      <div class="w-full bg-slate-300 h-64">
      </div>
@@ -542,7 +542,7 @@ function renderelectronicpage(){
   function renderelectronicdata(data){
     const template=data.map(item =>{
       return`
-      <div class="w-full max-w-[65rem] flex flex-col gap-4 bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
+      <div class="w-full mb-9 max-w-[65rem] flex flex-col gap-4 bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
       <img 
         src="${item.image}" 
         alt="${item.title}" 
