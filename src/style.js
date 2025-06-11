@@ -1,5 +1,10 @@
 const root=document.getElementById("root");
   const mobileMenu=document.getElementById("sidebar");
+  document.getElementById('userAccountBtn').addEventListener('click', function() {
+    history.pushState({}, "", "/Login");
+    checkstate(); 
+});
+
 function togglesidebar(){
   mobileMenu.classList.toggle("translate-x-full")
   sidebar.classList.toggle('translate-x-0');
@@ -561,6 +566,9 @@ function renderelectronicpage(){
     root.innerHTML=container;
   }
 }
+
+
+
 async function renderMainpage(){
   const Template= ` 
   <div class="container-lg hidden lg:block">
@@ -1003,7 +1011,141 @@ renderbodypageelectronic(electronicdata);
 }
 
 
+function postUserLogin(user, pass){
+  const result =fetch("https://fakestoreapi.com/auth/login" , {
+    method: "POST",
+  headers: { 'Content-Type': 'application/json' },
+  body: JSON.stringify({username: user , password: pass})
+  })
+  .then(res => res.json())
+  .then(json => {
+    localStorage.setItem("token" , json.token)
+    history.pushState( {} , "" , "/all-Products")
+    checkstate();
+    return json;
+  })
+  .catch(err =>{
+    localStorage.removeItem("token")
+    Toastify({
+      text: "نام کاربری یا رمز عبور اشتباه است!",
+      duration: 3000,
+      // destination: "https://github.com/apvarun/toastify-js",
+      // newWindow: true,
+      close: true,
+      gravity: "top", // `top` or `bottom`
+      position: "center", // `left`, `center` or `right`
+      stopOnFocus: true, // Prevents dismissing of toast on hover
+      style: {
+        background: "linear-gradient(to right, #ff5555, #ff0000)",
+      },
+    }).showToast(); 
+})
+  return result;
+}
 
+function handlegetAllproducts(){
+ return fetch('https://fakestoreapi.com/products')
+  .then(response => response.json())
+  .catch(err =>{
+    Toastify({
+      text: "اطلاعات شما دارای خطا می باشد!",
+      duration: 3000,
+      destination: "https://github.com/apvarun/toastify-js",
+      newWindow: true,
+      close: true,
+      gravity: "top", // `top` or `bottom`
+      position: "center", // `left`, `center` or `right`
+      stopOnFocus: true, // Prevents dismissing of toast on hover
+      style: {
+        background: "linear-gradient(to right, #ff5555, #ff0000)",
+      },
+      onClick: function(){
+        location.reload()
+      } // Callback after click
+    }).showToast();
+  })
+}
+async function  renderAllproducts(){
+  root.innerHTML=`
+  <div class="grid grid-cols-1 gap-4 md:grid-cols-4 px-4 rounded-md mt-5 mb-9">
+  <div class="w-full h-96 p-1 bg-slate-200 animate-pulse">
+     <div class="w-full bg-slate-300 h-64">
+     </div>
+     <div class="w-1/5 h-6 rounded-lg bg-slate-300 mt-4"></div>
+     <div class="w-1/7 h-6 rounded-lg bg-slate-300 mt-4"></div>
+     <div class="w-1/3 h-6 rounded-lg bg-slate-300 mt-4"></div>
+  </div>
+  <div class="w-full h-96 p-1 bg-slate-200 animate-pulse">
+   <div class="w-full bg-slate-300 h-64">
+   </div>
+   <div class="w-1/5 h-6 rounded-lg bg-slate-300 mt-4"></div>
+   <div class="w-1/7 h-6 rounded-lg bg-slate-300 mt-4"></div>
+   <div class="w-1/3 h-6 rounded-lg bg-slate-300 mt-4"></div>
+  </div>
+  <div class="w-full h-96 p-1 bg-slate-200 animate-pulse">
+  <div class="w-full bg-slate-300 h-64">
+  </div>
+  <div class="w-1/5 h-6 rounded-lg bg-slate-300 mt-4"></div>
+  <div class="w-1/7 h-6 rounded-lg bg-slate-300 mt-4"></div>
+  <div class="w-1/3 h-6 rounded-lg bg-slate-300 mt-4"></div>
+  </div>
+  <div class="w-full h-96 p-1 bg-slate-200 animate-pulse">
+  <div class="w-full bg-slate-300 h-64">
+  </div>
+  <div class="w-1/5 h-6 rounded-lg bg-slate-300 mt-4"></div>
+  <div class="w-1/7 h-6 rounded-lg bg-slate-300 mt-4"></div>
+  <div class="w-1/3 h-6 rounded-lg bg-slate-300 mt-4"></div>
+  </div>
+  </div>
+  `
+  const data= await handlegetAllproducts();
+  const template=data.map(item=>{
+    return `
+    <div class="w-full max-w-[65rem] flex flex-col gap-4 bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
+      <img 
+        src="${item.image}" 
+        alt="${item.title}" 
+        class="w-full h-48 object-contain"
+      >
+      <div class="p-4 flex flex-col gap-2">
+      <p class="text-gray-400">${item.category}</p>
+        <h2 class="text-lg font-medium text-gray-900 line-clamp-2">${item.title}</h2>
+        <span class="text-lg font-bold text-indigo-600">${item.price} تومان$</span>
+      </div>
+    </div>
+    `
+    }).join("");
+    const container=`<div class="grid grid-cols-1 md:grid-cols-4 gap-4 container mt-5 mb-5">${template}</div>`
+root.innerHTML=container;
+}
+
+function renderLoginpage(){
+  const template = `
+  <h1 class="text-center my-5 text-3xl font-bold text-red-500">برای ورود نام کاربری و رمز عبور خود را وارد کنید</h1>
+  <form class="border bg-gray-300 border-gray-500 rounded-md p-10 my-10 flex flex-col gap-4 items-center max-w-96 mx-auto" id="loginForm">
+    <div class="w-full">
+      <label class="hidden" for="username">username:</label>
+      <input class="border w-full p-2 rounded-md outline-none" placeholder="username" name="username" type="text" id="username">
+    </div>
+    <div class="w-full">
+      <label class="hidden" for="password">password:</label>
+      <input class="border w-full p-2 rounded-md outline-none" placeholder="password" name="password" type="password" id="password">
+    </div>
+    <input class="w-full py-3 px-4 bg-blue-600 hover:bg-blue-700 text-white font-medium rounded-lg transition-colors duration-300 outline-none" type="submit" value="Login">
+  </form>
+  `;
+  root.innerHTML = template;
+   
+  const form = document.getElementById('loginForm');
+  form.addEventListener('submit', handleLoginFormSubmit);
+}
+
+async function handleLoginFormSubmit(evt){
+evt.preventDefault();
+const form =evt.target;
+const formData= new FormData(form);
+const result=await postUserLogin(formData.get("username") , formData.get("password"));
+}
 function checkstate(){
 const url=location.pathname;
 
@@ -1019,6 +1161,12 @@ switch (url) {
       break;
       case "/electronic":
       renderelectronicpage();
+      break;
+      case "/all-Products":
+        renderAllproducts();
+        break;
+      case "/Login":
+      renderLoginpage();
       break;
   default:renderMainpage();
     break;
