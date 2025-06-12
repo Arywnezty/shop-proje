@@ -735,7 +735,7 @@ async function renderMainpage(){
             <div class="p-6">
                 <h3 class="text-xl font-semibold mb-3 text-gray-600">کت و شلوارهای رسمی</h3>
                 <p class="text-gray-600 mb-4">مناسب برای مهمانی‌ها و جلسات کاری با پارچه‌های درجه یک</p>
-                <button class="bg-gray-500 text-white py-2 px-4 rounded hover:bg-blue-700 transition-colors w-full">
+                <button onclick="handleMenclick(event)" href="/men" class="bg-gray-500 text-white py-2 px-4 rounded hover:bg-blue-700 transition-colors w-full">
                     مشاهده محصولات
                 </button>
             </div>
@@ -751,7 +751,7 @@ async function renderMainpage(){
             <div class="p-6">
                 <h3 class="text-xl font-semibold mb-3 text-gray-600">لباس‌های اسپرت</h3>
                 <p class="text-gray-600 mb-4">تیشرت‌های نخی با طرح‌های متنوع تا هودی‌های راحت</p>
-                <button class="bg-gray-500  text-white py-2 px-4 rounded hover:bg-blue-700 transition-colors w-full">
+                <button onclick="handleMenclick(event)" href="/men" class="bg-gray-500  text-white py-2 px-4 rounded hover:bg-blue-700 transition-colors w-full">
                     مشاهده محصولات
                 </button>
             </div>
@@ -767,7 +767,7 @@ async function renderMainpage(){
             <div class="p-6">
                 <h3 class="text-xl font-semibold mb-3 text-gray-600">لباس‌های فصلی</h3>
                 <p class="text-gray-600 mb-4">کت‌های زمستانی گرم و پالتوهای شیک</p>
-                <button class="bg-gray-500 bg-primary text-white py-2 px-4 rounded hover:bg-blue-700 transition-colors w-full">
+                <button onclick="handleMenclick(event)" href="/men" class="bg-gray-500 bg-primary text-white py-2 px-4 rounded hover:bg-blue-700 transition-colors w-full">
                     مشاهده محصولات
                 </button>
             </div>
@@ -783,7 +783,7 @@ async function renderMainpage(){
             <div class="p-6">
                 <h3 class="text-xl font-semibold mb-3 text-gray-600">اکسسوری‌های مردانه</h3>
                 <p class="text-gray-600 mb-4">کراوات، دستمال جیبی، کمربند و کیف‌های چرمی لوکس</p>
-                <button class="bg-gray-500  text-white py-2 px-4 rounded hover:bg-blue-700 transition-colors w-full">
+                <button onclick="handleMenclick(event)" href="/men" class="bg-gray-500  text-white py-2 px-4 rounded hover:bg-blue-700 transition-colors w-full">
                     مشاهده محصولات
                 </button>
             </div>
@@ -805,7 +805,7 @@ async function renderMainpage(){
               <div class="p-6">
               <h3 class="text-xl font-semibold mb-3 text-blue-400">لباس‌های مجلسی</h3>
               <p class="text-gray-600 mb-4">طراحی‌های خاص برای مهمانی‌های خاص</p>
-              <button class="bg-gray-500 text-white py-2 px-4 rounded hover:bg-blue-700 transition-colors w-full">
+              <button onclick="handleWomenclick(event)" href="/women" class="bg-gray-500 text-white py-2 px-4 rounded hover:bg-blue-700 transition-colors w-full">
                 مشاهده محصولات
             </button>
           </div>
@@ -820,7 +820,7 @@ async function renderMainpage(){
               <div class="p-6">
               <h3 class="text-xl font-semibold mb-3 text-blue-400">لباس‌های روزمره</h3>
               <p class="text-gray-600 mb-4">از بلوزهای ساده تا شلوارهای جین طراحی شده</p>
-              <button class="bg-gray-500 text-white py-2 px-4 rounded hover:bg-blue-700 transition-colors w-full">
+              <button onclick="handleWomenclick(event)" href="/women" class="bg-gray-500 text-white py-2 px-4 rounded hover:bg-blue-700 transition-colors w-full">
                 مشاهده محصولات
             </button>
           </div>
@@ -835,7 +835,7 @@ async function renderMainpage(){
               <div class="p-6">
               <h3 class="text-xl font-semibold mb-3 text-blue-400">لباس‌های سنتی</h3>
               <p class="text-gray-600 mb-4">با طرح‌های اصیل ایرانی و مدرن که به محصولاتمون اضافه شده</p>
-              <button class="bg-gray-500 text-white py-2 px-4 rounded hover:bg-blue-700 transition-colors w-full">
+              <button onclick="handleWomenclick(event)" href="/women" class="bg-gray-500 text-white py-2 px-4 rounded hover:bg-blue-700 transition-colors w-full">
                 مشاهده محصولات
             </button>
           </div>
@@ -850,7 +850,7 @@ async function renderMainpage(){
               <div class="p-6">
               <h3 class="text-xl font-semibold mb-3 text-blue-400">اکسسوری‌های زنانه</h3>
               <p class="text-gray-600 mb-4">شال، روسری، کیف و کفش‌های هماهنگ با هر استایل</p>
-              <button class="bg-gray-500 text-white py-2 px-4 rounded hover:bg-blue-700 transition-colors w-full">
+              <button onclick="handleWomenclick(event)" href="/women" class="bg-gray-500 text-white py-2 px-4 rounded hover:bg-blue-700 transition-colors w-full">
                 مشاهده محصولات
             </button>
           </div>
@@ -873,7 +873,7 @@ async function renderMainpage(){
               <div class="p-6">
               <h3 class="text-xl font-semibold mb-3 text-yellow-500">دستبند و گردنبند</h3>
               <p class="text-gray-600 mb-4">از طرح‌ مینیمال تا تکه‌های پرزرق و برق</p>
-              <button class="bg-gray-500 text-white py-2 px-4 rounded hover:bg-blue-700 transition-colors w-full">
+              <button onclick="handlejeweleryclick(event)" href="/jewelery" class="bg-gray-500 text-white py-2 px-4 rounded hover:bg-blue-700 transition-colors w-full">
                 مشاهده محصولات
             </button>
           </div>
@@ -888,7 +888,7 @@ async function renderMainpage(){
               <div class="p-6">
               <h3 class="text-xl font-semibold mb-3 text-yellow-500">انگشترهای طلا و نقره</h3>
               <p class="text-gray-600 mb-4">با سنگ‌های قیمتی و نیمه قیمتی</p>
-              <button class="bg-gray-500 text-white py-2 px-4 rounded hover:bg-blue-700 transition-colors w-full">
+              <button onclick="handlejeweleryclick(event)" href="/jewelery" class="bg-gray-500 text-white py-2 px-4 rounded hover:bg-blue-700 transition-colors w-full">
                 مشاهده محصولات
             </button>
           </div>
@@ -903,7 +903,7 @@ async function renderMainpage(){
               <div class="p-6">
               <h3 class="text-xl font-semibold mb-3 text-yellow-500">گوشواره‌های طراحی شده</h3>
               <p class="text-gray-600 mb-4">برای هر سلیقه و هر فرم صورت</p>
-              <button class="bg-gray-500 text-white py-2 px-4 rounded hover:bg-blue-700 transition-colors w-full">
+              <button onclick="handlejeweleryclick(event)" href="/jewelery" class="bg-gray-500 text-white py-2 px-4 rounded hover:bg-blue-700 transition-colors w-full">
                 مشاهده محصولات
             </button>
           </div>
@@ -918,7 +918,7 @@ async function renderMainpage(){
               <div class="p-6">
               <h3 class="text-xl font-semibold mb-3 text-yellow-500">ساعت‌های لوکس</h3>
               <p class="text-gray-600 mb-4">از برندهای معتبر بین‌المللی</p>
-              <button class="bg-gray-500 text-white py-2 px-4 rounded hover:bg-blue-700 transition-colors w-full">
+              <button onclick="handlejeweleryclick(event)" href="/jewelery" class="bg-gray-500 text-white py-2 px-4 rounded hover:bg-blue-700 transition-colors w-full">
                 مشاهده محصولات
             </button>
           </div>
@@ -941,7 +941,7 @@ async function renderMainpage(){
               <div class="p-6">
               <h3 class="text-xl font-semibold mb-3 text-green-600">گوشی‌های هوشمند</h3>
               <p class="text-gray-600 mb-4">آخرین مدل‌ها از برندهای معتبر</p>
-              <button class="bg-gray-500 text-white py-2 px-4 rounded hover:bg-blue-700 transition-colors w-full">
+              <button onclick="handleelectronicclick(event)" href="/electronic" class="bg-gray-500 text-white py-2 px-4 rounded hover:bg-blue-700 transition-colors w-full">
                 مشاهده محصولات
             </button>
               </div>
@@ -956,7 +956,7 @@ async function renderMainpage(){
               <div class="p-6">
               <h3 class="text-xl font-semibold mb-3 text-green-600">لپ‌تاپ و تبلت</h3>
               <p class="text-gray-600 mb-4">برای کار و تفریح</p>
-              <button class="bg-gray-500 text-white py-2 px-4 rounded hover:bg-blue-700 transition-colors w-full">
+              <button onclick="handleelectronicclick(event)" href="/electronic" class="bg-gray-500 text-white py-2 px-4 rounded hover:bg-blue-700 transition-colors w-full">
                 مشاهده محصولات
             </button>
               </div>
@@ -971,7 +971,7 @@ async function renderMainpage(){
               <div class="p-6">
               <h3 class="text-xl font-semibold mb-3 text-green-600">لوازم جانبی</h3>
               <p class="text-gray-600 mb-4">از پاوربانک تا هدست‌های گیمینگ</p>
-              <button class="bg-gray-500 text-white py-2 px-4 rounded hover:bg-blue-700 transition-colors w-full">
+              <button onclick="handleelectronicclick(event)" href="/electronic" class="bg-gray-500 text-white py-2 px-4 rounded hover:bg-blue-700 transition-colors w-full">
                 مشاهده محصولات
             </button>
               </div>
@@ -986,7 +986,7 @@ async function renderMainpage(){
               <div class="p-6">
               <h3 class="text-xl font-semibold mb-3 text-green-600">خانه هوشمند</h3>
               <p class="text-gray-600 mb-4">آسان تر کردن زندگی</p>
-              <button class="bg-gray-500 text-white py-2 px-4 rounded hover:bg-blue-700 transition-colors w-full">
+              <button onclick="handleelectronicclick(event)" href="/electronic" class="bg-gray-500 text-white py-2 px-4 rounded hover:bg-blue-700 transition-colors w-full">
                 مشاهده محصولات
             </button>
               </div>
